@@ -7,6 +7,8 @@ services:
       - /opt/panopticon-logs:/home/panopticon/logs
     environment:
       PANOPTICON_TOKEN_FILE: /run/secrets/token
+      PANOPTICON_MAX_MESSAGES: 3000
+      PANOPTICON_BOT_ACCOUNT: true
     secrets:
       - token
     restart: always
