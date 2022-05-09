@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   modmail:
-    image: "ianburgwin/discord-mod-mail"
+    image: "ianburgwin/discord-mod-mail:dev"
     volumes:
       - /opt/modmaildata:/home/modmail/data
     restart: always
